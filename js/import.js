@@ -405,7 +405,7 @@
             if(pathnameTruth.indexOf('true') === v) { 
                 className.ho = 'active';
                 setUrl.baseHome = '../../';
-                [setUrl.base1, setUrl.af, setUrl.baseSa, setUrl.baseZe, setUrl.baseBa, setUrl.baseSh, setUrl.baseAf] = Array(8).fill('');
+                [setUrl.base1, setUrl.baseSa, setUrl.baseZe, setUrl.baseBa, setUrl.baseSh, setUrl.baseAf] = Array(8).fill('');
                 setUrl.sa1 = '../sa/';
                 setUrl.ze1 = '../ze/';
                 setUrl.ba1 = '../ba/';
