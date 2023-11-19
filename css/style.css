@@ -1141,6 +1141,9 @@ aside.spotlight video:hover {
 }
 aside.spotlight p a {
     color: var(--shade-color-4);
+    padding: 6px 16px;
+    border: var(--border-2);
+    border-radius: 50px;
 }
 aside.spotlight p a:hover {
     color: var(--shade-color-8);
