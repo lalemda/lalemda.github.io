@@ -2120,7 +2120,6 @@ aside.spotlight a.link:hover {
     border-radius: var(--border-radius-3);
     padding: var(--padding-3);
     margin-bottom: var(--padding-3);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 .each-home-cont-one .home-path .columns {
     columns: auto 18rem;
@@ -2139,7 +2138,6 @@ aside.spotlight a.link:hover {
     border: var(--border-1);
     border-radius: var(--border-radius-3);
     padding: var(--padding-3);
-    background: var(--body-color-c);
 }
 .each-home-cont-one .home-path .thanks {
     display: flex;
@@ -2148,7 +2146,6 @@ aside.spotlight a.link:hover {
     border: var(--border-1);
     border-radius: var(--border-radius-3);
     padding: var(--padding-3);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 
