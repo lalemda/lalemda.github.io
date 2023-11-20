@@ -1385,6 +1385,61 @@ aside.spotlight a.link:hover {
 }
 
 
+/**##### Password */
+
+#passwordContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: var(--body-color-1);
+    background-image: linear-gradient(62deg, var(--body-color-1) 0%, var(--body-color-2) 100%);
+    scroll-behavior:unset;
+}
+#passwordContainer .inner-pass-container {
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: .5rem;
+}
+#passwordContainer .inner-pass-container h2 {
+    text-align: center;
+    color: var(--text-color-4);
+}
+#passwordContainer .inner-pass-container p {
+    color: var(--text-color-3);
+}
+#passwordContainer .inner-pass-container .password-input input {
+    /* border-radius: 10px; */
+    padding: .5rem;
+    border: var(--border-2);
+}
+#passwordContainer .inner-pass-container .password-input button {
+    /* border-radius: 10px; */
+    padding: .5rem;
+    border: var(--border-2);
+    margin-left: .25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#passwordContainer .inner-pass-container .check-box label {
+    cursor: pointer;
+}
+#passwordContainer .inner-pass-container .message {
+    margin-top: .625rem;
+    font-weight: bold;
+}
+#passwordContainer.hide-pass {
+    display: none;
+}
+
+
 
 /* PATH: =============================================== All Family */
 /* ================================================================ */
