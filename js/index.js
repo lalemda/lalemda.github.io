@@ -248,6 +248,83 @@
     }
   
     languageToggle.addEventListener("change", languageStorage);
+
+
+  // SECTION: For Password check
+  // ================================================================
+
+    const pass_container = document.querySelector('#passwordContainer');
+    const check_pass = document.querySelector('#checkPass');
+    const show_pass = document.querySelector('#showPass');
+    let messageElement = document.querySelector('#message');
+    let passwordInput = document.querySelector('#passwordInput');
+
+    if(!localStorage.getItem('checkPass')) {
+      passStorage();  
+    } else {
+    checkPass();
+    }
+
+    function passStorage() {
+      pass_container.classList.remove('hide-pass');
+    }
+
+    function checkPass() {
+      let localStoredValue = localStorage.getItem("checkPass");
+      fetch('js/users.json')
+      .then(response => response.json())
+      .then(data => {
+        var storedPassword = data.password;
+        if (localStoredValue === storedPassword) {
+          pass_container.classList.add('hide-pass');
+        } else {
+          pass_container.classList.remove('hide-pass');
+        }
+      })
+      .catch(error => {
+        showMessage("Error fetching user data.");
+        console.error(error);
+      });
+      
+    }
+
+    function checkPassword() {
+      let passwordInputValue = passwordInput.value;
+      fetch('js/users.json')
+        .then(response => response.json())
+        .then(data => {
+          let storedPassword = data.password;
+          if (passwordInputValue === storedPassword) {
+            localStorage.setItem("checkPass", passwordInputValue);
+            pass_container.classList.add('hide-pass');
+            // showMessage("Password is correct!");
+          } else {
+            showMessage("Password is incorrect. Please try again.");
+          }
+        })
+        .catch(error => {
+          showMessage("Error fetching user data.");
+          console.error(error);
+        });
+    }
+    
+    function showMessage(message) {
+      messageElement.textContent = message;
+    }
+
+    function showPassword() {
+      if(passwordInput.value.length == 0) {
+        showMessage("Please enter the password.");
+      } else {
+        passwordInput.type = show_pass.checked ? 'text' : 'password';
+      }
+    }
+
+    check_pass.addEventListener('click', checkPassword, false);
+    show_pass.addEventListener('change', showPassword, false);
+    passwordInput.addEventListener('focus', function() {
+      messageElement.textContent = '';
+    });
   
   
   
