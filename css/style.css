@@ -1348,6 +1348,7 @@ aside.spotlight a.link:hover {
 }
 .footer-container > footer ul li {
     list-style: none;
+    margin: .25rem 0;
 }
 .footer-container > footer ul li a {
     cursor: pointer;
