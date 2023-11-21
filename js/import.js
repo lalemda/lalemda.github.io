@@ -588,7 +588,7 @@
     function mainFooterFn() {
         return `
             <footer>
-                <div class="inner-footer-container-1 _grid-column-3">
+                <div class="inner-footer-container-1 _grid-column-4">
                     <div class="col">
                         <h2><span class="_en">Quick Links</span><span class="_st hide-lang">ኮሞ ላትራክቦት</span></h2>
                         <ul>
@@ -610,6 +610,12 @@
                         <ul>
                             <li><a href="#"><span class="_en">All Family</span><span class="_st hide-lang">ለሁላምካ ቤተሰብ</span></a></li>
                             <li><a href="#"><span class="_en">Second Generation and Below It</span><span class="_st hide-lang">ለሆሽተኛ ትውልድዋ ቱወ ኮሎ</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2><span class="_en">Account</span><span class="_st hide-lang">መለያ</span></h2>
+                        <ul>
+                            <li id="logOut" class="log-out"><a><span class="_en">Log Out</span><span class="_st hide-lang">ውጣ</span></a></li>
                         </ul>
                     </div>
                 </div>
