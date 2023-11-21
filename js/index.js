@@ -325,6 +325,22 @@
     passwordInput.addEventListener('focus', function() {
       messageElement.textContent = '';
     });
+
+
+  // SECTION: Log Out
+    // ================================================================
+    let log_out = document.querySelector('#logOut');
+
+    function logOutFn () {
+      if(localStorage.getItem('checkPass')) {
+        localStorage.removeItem('checkPass');
+        window.location.reload(); 
+      } else {
+        console.log('No "checkPass" local storage');
+      }
+    }
+
+    log_out.addEventListener('click', logOutFn, false);
   
   
   
