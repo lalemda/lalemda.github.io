@@ -61,7 +61,7 @@
                         'zebiba-s-siraj.html','haba-siraj.html','awd-siraj.html','muhammad-siraj.html',
                         'hira-siraj.html',
 
-                        'xxx-s-munaja.html','halima.html',
+                        'abdulhakim-s-munaja.html','halima.html',
 
                         'redi-s-aysha.html',
 
