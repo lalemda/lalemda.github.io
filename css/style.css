@@ -1330,7 +1330,7 @@ aside.spotlight a.link:hover {
     padding: var(--padding-2);
     margin: var(--margin-1);
 }
-.footer-container > footer .inner-footer-container-1 {  /** _grid-column-3 */
+.footer-container > footer .inner-footer-container-1 {  /** _grid-column-4 */
     column-gap: 0.75vw;
     padding-left: var(--padding-3);
 }
@@ -1348,6 +1348,9 @@ aside.spotlight a.link:hover {
 }
 .footer-container > footer ul li {
     list-style: none;
+}
+.footer-container > footer ul li a {
+    cursor: pointer;
 }
 .footer-container > footer .inner-footer-container-2 {
     border-top: 1px solid var(--text-color-5);
