@@ -1408,6 +1408,7 @@ aside.spotlight a.link:hover {
     display: flex;
     width: 100vw;
     height: 100vh;
+    padding-bottom: 30vh;
     z-index: 100;
     background-color: var(--body-color-1);
     background-image: linear-gradient(62deg, var(--body-color-1) 0%, var(--body-color-2) 100%);
