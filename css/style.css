@@ -1353,6 +1353,15 @@ aside.spotlight a.link:hover {
 .footer-container > footer ul li a {
     cursor: pointer;
 }
+.footer-container > footer ul li button {
+    cursor: pointer;
+    border: none;
+    background: inherit;
+    color: var(--text-color-5);
+}
+.footer-container > footer ul li button:hover {
+    color: var(--heading-color-2);
+}
 .footer-container > footer .inner-footer-container-2 {
     border-top: 1px solid var(--text-color-5);
     margin-top: .5rem;
