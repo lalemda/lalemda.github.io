@@ -2349,7 +2349,7 @@ aside.spotlight a.link:hover {
 
     /** Container-Three: Home page*/
     .inner-container-three > .count-container .count .inner-count {
-        gap: .25rem;
+        gap: .125rem;
     }
     .inner-container-three > .count-container .count .inner-count span {
         width: 95px;
@@ -2363,7 +2363,7 @@ aside.spotlight a.link:hover {
 
     /** All Family - Count */
     .inner-family-cont-one .count-container .count .inner-count {
-        gap: .25rem;
+        gap: .125rem;
     }
     .inner-family-cont-one .count-container .count .inner-count span {
         width: 95px; 
