@@ -214,8 +214,8 @@
           let storedPassword = data.password;
           if (passwordInputValue === storedPassword) {
             localStorage.setItem("checkPass", passwordInputValue);
-            pass_container.classList.add('hide-pass');
             window.location.reload();
+            pass_container.classList.add('hide-pass');
             // showMessage("Password is correct!");
           } else {
             showMessage("Password is incorrect. Please try again.");
