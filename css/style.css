@@ -1590,6 +1590,7 @@ aside.spotlight a.link:hover {
 }
 .section-one-path .family-container dd a figure {
     border-radius: 50%;
+    border: var(--border-1);
 }
 .section-one-path .family-container dd a figure img {
     width: 3.125rem;
