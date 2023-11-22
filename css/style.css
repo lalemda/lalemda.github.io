@@ -2325,6 +2325,204 @@ aside.spotlight a.link:hover {
 }
 
 
+/* ### News & Events */
+/* ================= */
+
+/** ##### _headers */
+.each-home-cont-one :where(.news, .event) ._headers {
+    padding-left: var(--padding-3);
+    padding-top: var(--padding-3);
+}
+.each-home-cont-one :where(.news, .event) ._headers h3 {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.each-home-cont-one :where(.news, .event) ._headers h3 a {
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
+}
+
+/** ##### Section */
+.each-home-cont-one :where(.news, .event) {
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+}
+.each-home-cont-one div.news {
+    margin-bottom: calc(var(--margin-3) * 1.5);
+}
+.each-home-cont-one div.event {
+    margin-top: calc(var(--margin-3) * 1.5);
+}
+.each-home-cont-one .section-one .card {  /** _grid-column-3 */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-rem-075);
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+    padding: var(--padding-3);
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: .5s;
+}
+.each-home-cont-one .section-one .card a {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    height: 100%;
+}
+.each-home-cont-one .section-one .card a  p {
+    margin-top: auto;
+}
+.each-home-cont-one .section-one .card a figure {
+    position: relative;
+}
+.each-home-cont-one .section-one .card a:hover figure::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top right, #1a1a1a, transparent);
+    border-radius: var(--border-radius-5);
+    z-index: 2;
+}
+.each-home-cont-one .section-one .card a:hover h3 {
+    color: var(--nav-color-2);
+}
+.each-home-cont-one .section-one .card a figure img {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* All News and Events */
+/* =================== */
+
+/** Section */
+.each-home-cont-one .section-one :where(section.news, section.event) {  /** _grid-column-3 */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-rem-075);
+
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+    padding: var(--padding-4);
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: .5s;
+}
+.each-home-cont-one .section-one :where(section.news, section.event) a {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-1);
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    transition: .8s;
+}
+.each-home-cont-one .section-one :where(section.news, section.event) a:hover {
+    background: var(--body-color-c);
+}
+.each-home-cont-one .section-one :where(section.news, section.event) a figure {
+    /* width: min(30%, 250px); */
+    width: 100px;
+}
+.each-home-cont-one.section-one :where(section.news, section.event) a figure img {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 5/3;
+    object-fit: cover;
+}
+.each-home-cont-one .section-one :where(section.news, section.event) a figure {
+    position: relative;
+}
+.each-home-cont-one .section-one :where(section.news, section.event) a:hover figure::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top right, #1a1a1a, transparent);
+    border-radius: var(--border-radius-5);
+    z-index: 2;
+}
+.each-home-cont-one .section-one :where(section.news, section.event) a:hover h3 {
+    color: var(--nav-color-2);
+    margin: 0;
+}
+.each-home-cont-one .section-one :where(section.news, section.event) .heading {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: start;
+    width: 100%;
+}
+
+/* All News and Event Path */
+/* ====================== */
+.each-home-cont-one .section-one-path {    /** _grid-column-1 */
+    width: 100%;
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+    padding: var(--padding-3);
+    margin-top: calc(var(--margin-3)*2);
+    row-gap: calc(var(--gap-1) * 2);
+}
+.each-home-cont-one .section-one-path a.link {
+    color: var(--heading-color-1);
+}
+.each-home-cont-one .section-one-path :where(section.news, section.event) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: var(--gap-1);
+}
+.each-home-cont-one .section-one-path :where(section.news, section.event) figure {
+    position: relative;
+    max-width: 18.7rem;
+    cursor: pointer;
+}
+.each-home-cont-one .section-one-path :where(section.news, section.event) figure img {
+    border-radius: var(--border-radius-4);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    transition: var(--tran-05);
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    cursor: pointer;
+}
+.each-home-cont-one.section-one-path :where(section.news, section.event) figure img:hover {
+    transform: scale(1.1);
+}
+
+/** event2.html */
+.each-home-cont-one .section-one-path .event-programs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: calc(var(--gap-1) * 3);
+}
+.each-home-cont-one .section-one-path .event-programs :where(.degree, .diploma) {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.each-home-cont-one .section-one-path .event-programs button {
+    cursor: pointer;
+    padding: .25rem;
+    width: 100%;
+}
+.each-home-cont-one .section-one-path .event-programs h3:hover {
+    color: var(--nav-color-2);
+}
+.each-home-cont-one .section-one-path .event-programs button:hover {
+    color: var(--heading-color-1);
+}
+
+
+
 /* GENERIC: =========================================== Media Query */
 /* ================================================================ */
 
