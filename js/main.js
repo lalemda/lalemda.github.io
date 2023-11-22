@@ -378,6 +378,171 @@
 
 
 
+// SECTION: ================== Count All Family - Different section
+  // ================================================================
+
+  let allFamily = document.querySelector('#allFamilyEn');
+  let dd_el = allFamily?.querySelectorAll('dd');
+  let dt_el = allFamily?.querySelectorAll('dt');
+  let g1 = allFamily?.querySelectorAll('.g1');
+  let g2 = allFamily?.querySelectorAll('.g2');
+  let g3 = allFamily?.querySelectorAll('.g3');
+  let g4 = allFamily?.querySelectorAll('.g4');
+  let wife = allFamily?.querySelectorAll('.wife');
+  let male = allFamily?.querySelectorAll('.male');
+  let female = allFamily?.querySelectorAll('.female');
+  let sa = allFamily?.querySelectorAll('.sa');
+  let ze = allFamily?.querySelectorAll('.ze');
+  let ba = allFamily?.querySelectorAll('.ba');
+  let sh = allFamily?.querySelectorAll('.sh');
+  let spouse = allFamily?.querySelectorAll('.spouse');
+  let died = allFamily?.querySelectorAll('.died');
+
+  console.log('All dd el:- ', dd_el?.length);
+  console.log('All G1:- ', g1?.length);
+  console.log('All G2:- ', g2?.length);
+  console.log('All G3:- ', g3?.length);
+  console.log('All G4:- ', g4?.length);
+  console.log('Lalemda Wife:- ', wife?.length);
+  console.log('All Male:- ', male?.length);
+  console.log('All Female:- ', female?.length);
+  console.log('All Saliyat Family:- ', sa?.length);
+  console.log('All Zemzem Family:- ', ze?.length);
+  console.log('All Balenge Family:- ', ba?.length);
+  console.log('All Shemsiya Family:- ', sh?.length);
+  console.log('All Spouse:- ', spouse?.length);
+  console.log('All Died:- ', died?.length);
+
+  function countAllGeneration() {
+    if(dd_el) { countFunction(document.querySelectorAll('.allFamilyCount'), dd_el.length); }
+    if(male) { countFunction(document.querySelectorAll('.allMaleCount'), male.length); }
+    if(female) { countFunction(document.querySelectorAll('.allFemaleCount'), female.length); }
+    if(g1) {
+      let sumPure = 0, sumSpouse = 0;
+      g1.forEach((g1) => {
+        if (g1.classList.contains('spouse')) {
+          sumSpouse += 1;
+        } else {
+          sumPure += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allG1Count'), g1.length);
+      countFunction(document.querySelectorAll('.allPureG1Count'), sumPure);
+      countFunction(document.querySelectorAll('.allSpouseG1Count'), sumSpouse);
+    }
+    if(g2) {
+      let sumPure = 0, sumSpouse = 0;
+      g2.forEach((g2) => {
+        if (g2.classList.contains('spouse')) {
+          sumSpouse += 1;
+        } else {
+          sumPure += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allG2Count'), g2.length);
+      countFunction(document.querySelectorAll('.allPureG2Count'), sumPure);
+      countFunction(document.querySelectorAll('.allSpouseG2Count'), sumSpouse);
+    }
+    if(g3) {
+      let sumPure = 0, sumSpouse = 0;
+      g3.forEach((g3) => {
+        if (g3.classList.contains('spouse')) {
+          sumSpouse += 1;
+        } else {
+          sumPure += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allG3Count'), g3.length);
+      countFunction(document.querySelectorAll('.allPureG3Count'), sumPure);
+      countFunction(document.querySelectorAll('.allSpouseG3Count'), sumSpouse);
+    }
+    if(g4) {
+      let sumPure = 0, sumSpouse = 0;
+      g4.forEach((g4) => {
+        if (g4.classList.contains('spouse')) {
+          sumSpouse += 1;
+        } else {
+          sumPure += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allG4Count'), g4.length);
+      countFunction(document.querySelectorAll('.allPureG4Count'), sumPure);
+      countFunction(document.querySelectorAll('.allSpouseG4Count'), sumSpouse);
+    }
+    if(sa) { 
+      let sumMale = 0, sumFemale = 0;
+      sa.forEach((sa) => {
+        if (sa.classList.contains('male')) {
+          sumMale += 1;
+        } else {
+          sumFemale += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allSaliyatCount'), sa.length); 
+      countFunction(document.querySelectorAll('.saliyatMale'), sumMale); 
+      countFunction(document.querySelectorAll('.saliyatFemale'), sumFemale); 
+    }
+    if(ze) { 
+      let sumMale = 0, sumFemale = 0;
+      ze.forEach((ze) => {
+        if (ze.classList.contains('male')) {
+          sumMale += 1;
+        } else {
+          sumFemale += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allZemzemCount'), ze.length); 
+      countFunction(document.querySelectorAll('.zemzemMale'), sumMale); 
+      countFunction(document.querySelectorAll('.zemzemFemale'), sumFemale); 
+    }
+    if(ba) { 
+      let sumMale = 0, sumFemale = 0;
+      ba.forEach((ba) => {
+        if (ba.classList.contains('male')) {
+          sumMale += 1;
+        } else {
+          sumFemale += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allBalengeCount'), ba.length); 
+      countFunction(document.querySelectorAll('.balengeMale'), sumMale); 
+      countFunction(document.querySelectorAll('.balengeFemale'), sumFemale); 
+    }
+    if(sh) { 
+      let sumMale = 0, sumFemale = 0;
+      sh.forEach((sh) => {
+        if (sh.classList.contains('male')) {
+          sumMale += 1;
+        } else {
+          sumFemale += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allShemsiyaCount'), sh.length); 
+      countFunction(document.querySelectorAll('.shemsiyaMale'), sumMale); 
+      countFunction(document.querySelectorAll('.shemsiyaFemale'), sumFemale); 
+    }
+    if(died) { 
+      let diedMale = 0, diedFemale = 0;
+      died.forEach((died) => {
+        if (died.classList.contains('male')) {
+          diedMale += 1;
+        } else {
+          diedFemale += 1;
+        }
+      })
+      countFunction(document.querySelectorAll('.allDied'), died.length); 
+      countFunction(document.querySelectorAll('.diedMale'), diedMale); 
+      countFunction(document.querySelectorAll('.diedFemale'), diedFemale); 
+    }
+  }
+  countAllGeneration()
+
+  function countFunction(el1, el2) {
+    el1.forEach(v => {
+      let getTextContent = v.textContent;
+      v.textContent = getTextContent + el2;
+    })
+  }
 
 
   
