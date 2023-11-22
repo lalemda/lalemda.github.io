@@ -1879,6 +1879,40 @@ aside.spotlight a.link:hover {
     font-weight: 600;
 }
 
+/** #### Section-zero: Immediate Family */
+.each-family-cont-one .section-zero {  /** _grid-column-1 */
+    padding: var(--padding-3);
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+    gap: calc(var(--gap-1) / 2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.each-family-cont-one .section-zero .count {  /** _grid-column-2 */
+    padding-top: var(--padding-4);
+    padding-bottom: var(--padding-3);
+    row-gap: .5rem;
+    column-gap: 2.5rem;
+}
+.each-family-cont-one .section-zero .count .inner-count {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+    border: var(--border-1);
+    padding: .5rem .25rem;
+    justify-content: space-between;
+}
+.each-family-cont-one .section-zero .count .inner-count span {
+    /* width:120px; */
+    color: var(--text-color-3);
+    font-size: 1rem;
+    padding: .25rem .75rem;
+    border: var(--border-2);
+    border-radius: var(--border-radius-1);
+    font-weight: bold;
+    text-align: center;
+}
+
 
 /** #### Section-one: Immediate Family */
 .each-family-cont-one .section-one {  /** _grid-column-1 */
