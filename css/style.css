@@ -486,6 +486,16 @@ img[alt] {  /** For Firefox compatibility*/
 }
 
 
+/** #### For element having a class name '_li-list-style' **/
+ul._list-style {
+    margin-left: 1.125rem;
+}
+ul._list-style > li::marker {
+    font-size: 150%;
+    color: var(--nav-color-2);
+}
+
+
 /* ### Blockquote */
 ._bq-container {
     display: flex;
@@ -1181,7 +1191,6 @@ aside.spotlight a.link:hover {
     gap: var(--gap-1);
     margin: var(--margin-1);
     padding: var(--padding-2);
-    background: var(--body-color-b);
     border: var(--border-1);
     /* border-radius: var(--border-radius-3); */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -2368,6 +2377,9 @@ aside.spotlight a.link:hover {
     border: var(--border-1);
     border-radius: var(--border-radius-3);
     padding: var(--padding-3);
+}
+.each-home-cont-one .home-path .section-one .col ul {
+    color: var(--text-color-2);
 }
 .each-home-cont-one .home-path .thanks {
     display: flex;
