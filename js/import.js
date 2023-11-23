@@ -607,9 +607,9 @@
                         </ul>
                     </div>
                     <div class="col">
-                        <h2><span class="_en">Account</span><span class="_st hide-lang">መለያ</span></h2>
+                        <h2><span class="_en">Account</span><span class="_st hide-lang">መለያ/አካውንት</span></h2>
                         <ul>
-                            <li id="logOut" class="log-out"><button><span class="_en">Log Out</span><span class="_st hide-lang">ውጣ</span></button></li>
+                            <li id="logOut" class="log-out"><button><span class="_en">Log Out</span><span class="_st hide-lang">ውጦት</span></button></li>
                         </ul>
                     </div>
                 </div>
