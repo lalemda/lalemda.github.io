@@ -95,7 +95,7 @@
                         'sheza-semeredin.html','sharehad-semeredin.html',
 
                         'lalemda.html', 'gallery.html', 'about-us.html', 'contact-us.html', 'news-and-event.html',
-                        'news1.html', 'news2.html', 'news3.html',
+                        'news1.html', 'news2.html', 'news3.html', 'lalemda-association.html',
                     ]   
     ;
     
@@ -402,7 +402,7 @@
             if(pathnameTruth.indexOf('true') === v) { className.foziya = 'active'; }
         });
 
-        [236,237,238,239,240,241,242,243].forEach( v => {                  /** All Home - Lalemda, Gallery,  */
+        [236,237,238,239,240,241,242,243,244].forEach( v => {                  /** All Home - Lalemda, Gallery,  */
             if(pathnameTruth.indexOf('true') === v) { 
                 className.ho = 'active';
                 setUrl.baseHome = '../../';
@@ -603,7 +603,7 @@
                         <h2><span class="_en">Information About</span><span class="_st hide-lang">ስለ መረጃ</span></h2>
                         <ul>
                             <li><a href="../../../lalemda/ho/about-us.html"><span class="_en">About Us</span><span class="_st hide-lang">ስለ ኢኛ</span></a></li>
-                            <li><a href="../../../lalemda/ho/news3.html"><span class="_en">About Lalemda Association</span><span class="_st hide-lang">ስለ ላለምዳ ማህበር</span></a></li>
+                            <li><a href="../../../lalemda/ho/lalemda-association.html"><span class="_en">About Lalemda Association</span><span class="_st hide-lang">ስለ ላለምዳ ማህበር</span></a></li>
                         </ul>
                     </div>
                     <div class="col">
