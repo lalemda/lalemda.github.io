@@ -544,6 +544,28 @@
     })
   }
 
+    // GENERIC: ##### Li list-style  
+  // ================================================================
+
+  let list_style = document.querySelectorAll('._li-list-style');
+  let listUl;
+
+  if (list_style) {
+    list_style.forEach(ul => {
+      listUl = ul.querySelectorAll('ul');
+      listStyle();
+      console.log('listUl length', listUl.length);
+    })
+  }
+
+  function listStyle() {  
+    if(listUl) {
+      listUl.forEach(ul => {
+          ul.classList.add('_list-style');
+      })
+    }
+  }
+
 
   
 }());
