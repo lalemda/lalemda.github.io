@@ -1087,6 +1087,14 @@ nav .menu-container {
 }
 
 
+/* SECTION: ========================================= All-container */
+/* ================================================================ */
+
+.all-container{
+    margin: var(--margin-1);
+    background: var(--body-color-a);
+}
+
 
 /* SECTION: ========================================= Container-Two */
 /* ================================================================ */
@@ -1101,7 +1109,7 @@ nav .menu-container {
     [row2-start] "intro intro spotlight" 1fr [row2-end]
     / 1fr 1fr 1fr;
     gap: var(--gap-1);
-    margin: var(--margin-1);
+    /* margin: var(--margin-1); */
     padding: var(--padding-2);
     background: var(--body-color-b);
 }
@@ -1181,23 +1189,23 @@ aside.spotlight a.link:hover {
 /* ================================================================ */
 
 .intro2 {grid-area: intro2;}
-.spotlight2 {grid-area: spotlight2;}
+.link-container {grid-area: link-container;}
 
 .container-two-2 .inner-container-two-2 {
     display: grid;
     grid:
-    [row1-start] "intro2 intro2 spotlight2" 1fr [row1-end]
-    [row2-start] "intro2 intro2 spotlight2" 1fr [row2-end]
+    [row1-start] "intro2 intro2 link-container" 1fr [row1-end]
+    [row2-start] "intro2 intro2 link-container" 1fr [row2-end]
     / 1fr 1fr 1fr;
     gap: var(--gap-1);
-    margin: var(--margin-1);
+    /* margin: var(--margin-1); */
     padding: var(--padding-2);
     border: var(--border-1);
     /* border-radius: var(--border-radius-3); */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     background: var(--body-color-a)
 }
-.container-two-2 .inner-container-two-2 :where(main.intro2, aside.spotlight2) {
+.container-two-2 .inner-container-two-2 :where(main.intro2, aside.link-container) {
     padding: var(--padding-3);
     /* width: 100%; */
 }
@@ -1207,12 +1215,12 @@ aside.spotlight a.link:hover {
 .inner-container-two-2 main.intro2 p a:hover {
     color: var(--shade-color-8);
 }
-.inner-container-two-2 aside.spotlight2 .act1 {
+.inner-container-two-2 aside.link-container .act1 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.inner-container-two-2 aside.spotlight2 .act1 a.link {
+.inner-container-two-2 aside.link-container .act1 a.link {
     /* margin-bottom: 1.25rem; */
     color: var(--shade-color-4);
     background: var(--body-color-c);
@@ -1222,7 +1230,7 @@ aside.spotlight a.link:hover {
     text-align: center;
     font-weight: 800;
 }
-.inner-container-two-2 aside.spotlight2 .act1 a.link:hover {
+.inner-container-two-2 aside.link-container .act1 a.link:hover {
     color: var(--shade-color-8);
     background: var(--body-color-d);
 }
@@ -1232,7 +1240,7 @@ aside.spotlight a.link:hover {
 /* ================================================================ */
 .container-three > .inner-container-three {
     padding: var(--padding-2);
-    margin: var(--margin-1);
+    /* margin: var(--margin-1); */
     background: var(--body-color-b);
 }
 .inner-container-three > .count-container {
@@ -1271,7 +1279,7 @@ aside.spotlight a.link:hover {
 /* ================================================================ */
 .container-four > .inner-container-four {
     padding: var(--padding-2);
-    margin: var(--margin-1);
+    /* margin: var(--margin-1); */
     background: var(--body-color-b);
 }
 .inner-container-four > .gallery {
@@ -1311,7 +1319,7 @@ aside.spotlight a.link:hover {
 /* ================================================================ */
 .container-five > .inner-container-five {
     padding: var(--padding-2);
-    margin: var(--margin-1);
+    /* margin: var(--margin-1); */
     background: var(--body-color-a);
     border: var(--border-1);
 }
@@ -2657,6 +2665,15 @@ aside.spotlight a.link:hover {
         margin-bottom: var(--margin-3);
     }
 
+    /** Container two-2: Home page */
+    .container-two-2 .inner-container-two-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        'intro2'
+        'link-container';
+    }
+
     /** Container-Three: Home page*/
     .inner-container-three > .count-container .count .inner-count {
         gap: .125rem;
@@ -2733,16 +2750,6 @@ aside.spotlight a.link:hover {
     aside.spotlight img {
         max-width: 40%;
         margin-right: var(--margin-3);
-    }
-
-
-    /* =========== Container two-2: Home page */
-    .container-two-2 .inner-container-two-2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-        'intro2'
-        'spotlight2';
     }
 
     /* ========= Container five: Home page */
