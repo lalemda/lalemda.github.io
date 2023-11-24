@@ -47,6 +47,7 @@ html {
     --body-color-b: #F1F3F5; /** Gray 1 **/
     --body-color-c: #E9ECEF; /** Gray 2 **/
     --body-color-d: #CED4DA; /** Gray 4 **/
+    --body-color-e: #DDDDDD;
 
     /* ===== Nav Colors ===== */
     --nav-color-1: #E7631A;
@@ -1580,7 +1581,7 @@ aside.spotlight a.link:hover {
     padding-bottom: var(--padding-3);
 }
 .inner-family-cont-one .intro > h2 {
-    margin: 0;
+    margin: .875rem 0 0 0;
     /* font-size: 2rem; */
     font-size: calc(20px + 20 * (100vw - 300px) / 2000);
 }
@@ -1694,6 +1695,51 @@ aside.spotlight a.link:hover {
     font-style: italic;
     font-size: .9rem;
 }
+
+
+/*###### Name Frequency*/
+.inner-family-cont-one .name-frequency-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content:space-around;
+    padding: var(--padding-3);
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+    margin-bottom: var(--margin-3);
+}
+.inner-family-cont-one .name-frequency-container .name-f-inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.inner-family-cont-one .name-frequency-container table {
+    /* padding: var(--padding-4); */
+    border: var(--border-1);
+    width: 300px;
+}
+.inner-family-cont-one .name-frequency-container table th {
+    background: var(--body-color-e);
+}
+.inner-family-cont-one .name-frequency-container table td {
+    background: var(--body-color-d);
+}
+.inner-family-cont-one .name-frequency-container table td:last-child {
+    text-align: center;
+}
+.inner-family-cont-one .name-frequency-container table td:first-of-type {
+    padding: 0 .25rem;
+}
+
+.inner-family-cont-one .name-frequency-container table td:first-of-type {
+    padding: 0 .25rem;
+}
+.inner-family-cont-one .section-name-frequency {
+    margin-top: calc(var(--margin-3) * 4);
+}
+
 
 
 
@@ -2656,6 +2702,15 @@ aside.spotlight a.link:hover {
     .family-container-one .each-family-cont-one .intro {
         gap: var(--gap-2);
     }
+
+    /** Name Frequency */
+    .inner-family-cont-one .name-frequency-container {
+        gap: .75rem;
+    }
+    .inner-family-cont-one .name-frequency-container table {
+        width: auto;
+    }
+
 
 }
 
