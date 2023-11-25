@@ -1623,6 +1623,9 @@ aside.spotlight a.link:hover {
 
 
 /** Section */
+.inner-family-cont-one .section-one-path .a-z {
+    margin-top: var(--margin-3);
+}
 .inner-family-cont-one .section-one-path .family-container {
     position: relative;
     padding: var(--padding-3);
@@ -1715,7 +1718,7 @@ aside.spotlight a.link:hover {
     padding: var(--padding-3) 0;
     border: var(--border-1);
     border-radius: var(--border-radius-3);
-    margin-bottom: var(--margin-3);
+    margin: var(--margin-3) 0;
 }
 .inner-family-cont-one .name-frequency-container .name-f-inner-container {
     display: flex;
@@ -2677,6 +2680,7 @@ aside.spotlight a.link:hover {
     .inner-container-three > .count-container .count .inner-count span {
         width: 95px;
         font-size: .8rem;
+        padding: .125rem .75rem;
     }
 
     /** All-family */
@@ -2691,6 +2695,7 @@ aside.spotlight a.link:hover {
     .inner-family-cont-one .count-container .count .inner-count span {
         width: 95px; 
         font-size: .8rem;
+        padding: .125rem .75rem;
     }
 
     /** All Family - Section */
