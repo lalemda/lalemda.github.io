@@ -1191,6 +1191,9 @@ aside.spotlight a.link:hover {
 .intro2 {grid-area: intro2;}
 .link-container {grid-area: link-container;}
 
+.container-two-2 {
+    background: var(--body-color-b);
+}
 .container-two-2 .inner-container-two-2 {
     display: grid;
     grid:
@@ -1233,6 +1236,12 @@ aside.spotlight a.link:hover {
 .inner-container-two-2 aside.link-container .act1 a.link:hover {
     color: var(--shade-color-8);
     background: var(--body-color-d);
+}
+.container-two-2.part-one {
+    padding-top: calc(var(--padding-3) * 2);
+}
+.container-two-2.part-two {
+    padding-bottom: calc(var(--padding-3) * 2);
 }
 
 
