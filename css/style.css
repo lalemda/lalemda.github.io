@@ -1712,7 +1712,7 @@ aside.spotlight a.link:hover {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content:space-around;
-    padding: var(--padding-3);
+    padding: var(--padding-3) 0;
     border: var(--border-1);
     border-radius: var(--border-radius-3);
     margin-bottom: var(--margin-3);
@@ -1737,10 +1737,6 @@ aside.spotlight a.link:hover {
 .inner-family-cont-one .name-frequency-container table td:last-child {
     text-align: center;
 }
-.inner-family-cont-one .name-frequency-container table td:first-of-type {
-    padding: 0 .25rem;
-}
-
 .inner-family-cont-one .name-frequency-container table td:first-of-type {
     padding: 0 .25rem;
 }
@@ -2722,7 +2718,7 @@ aside.spotlight a.link:hover {
 
     /** Name Frequency */
     .inner-family-cont-one .name-frequency-container {
-        gap: .75rem;
+        gap: .125rem;
     }
     .inner-family-cont-one .name-frequency-container table {
         width: auto;
