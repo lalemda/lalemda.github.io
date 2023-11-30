@@ -1344,9 +1344,11 @@ aside.spotlight a.link:hover {
     border-radius: var(--border-radius-5);
     z-index: 2;
 }
-.inner-container-four-1 > .news .all-news section.news a:hover h3 {
-    color: var(--nav-color-2);
-    margin: 0;
+.inner-container-four-1 > .news .all-news section.news a h3 {
+    color: var(--text-color-1);
+}
+.inner-container-four-1 > .news .all-news section.news a p {
+    color: var(--text-color-3);
 }
 .inner-container-four-1 > .news .all-news section.news .heading {
     display: flex;
@@ -2651,9 +2653,11 @@ aside.spotlight a.link:hover {
     border-radius: var(--border-radius-5);
     z-index: 2;
 }
-.each-home-cont-one .section-one :where(section.news, section.event) a:hover h3 {
-    color: var(--nav-color-2);
-    margin: 0;
+.each-home-cont-one .section-one :where(section.news, section.event) a h3 {
+    color: var(--text-color-1);
+}
+.each-home-cont-one .section-one :where(section.news, section.event) a p {
+    color: var(--text-color-3);
 }
 .each-home-cont-one .section-one :where(section.news, section.event) .heading {
     display: flex;
