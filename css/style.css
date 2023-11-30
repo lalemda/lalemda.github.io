@@ -1284,6 +1284,79 @@ aside.spotlight a.link:hover {
     text-align: center;
 }
 
+
+/* SECTION: ====================================== Container-Four-1 */
+/* ================================================================ */
+.container-four-1 > .inner-container-four-1 {
+    padding: var(--padding-2);
+    /* margin: var(--margin-1); */
+    background: var(--body-color-b);
+}
+.inner-container-four-1 > .news {
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+    padding: var(--padding-3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background: var(--body-color-a);
+}
+.inner-container-four-1 > .news .all-news section.news  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-rem-075);
+
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+    padding: var(--padding-4);
+    width: 100%;
+    transition: .5s;
+}
+.inner-container-four-1 > .news .all-news section.news a {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-1);
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    transition: .8s;
+}
+.inner-container-four-1 > .news .all-news section.news a:hover {
+    background: var(--body-color-c);
+}
+.inner-container-four-1 > .news .all-news section.news a figure {
+    width: 100px;
+}
+.inner-container-four-1 > .news .all-news section.news a figure img {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 5/3;
+    object-fit: cover;
+}
+.inner-container-four-1 > .news .all-news section.news a figure {
+    position: relative;
+}
+.inner-container-four-1 > .news .all-news section.news a:hover figure::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top right, #1a1a1a, transparent);
+    border-radius: var(--border-radius-5);
+    z-index: 2;
+}
+.inner-container-four-1 > .news .all-news section.news a:hover h3 {
+    color: var(--nav-color-2);
+    margin: 0;
+}
+.inner-container-four-1 > .news .all-news section.news .heading {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: start;
+    width: 100%;
+}
+
+
 /* SECTION: ======================================== Container-Four */
 /* ================================================================ */
 .container-four > .inner-container-four {
@@ -2621,7 +2694,7 @@ aside.spotlight a.link:hover {
     object-fit: cover;
     cursor: pointer;
 }
-.each-home-cont-one.section-one-path :where(section.news, section.event) figure img:hover {
+.each-home-cont-one .section-one-path :where(section.news, section.event) figure img:hover {
     transform: scale(1.1);
 }
 .each-home-cont-one .section-one-path a.link2 {
