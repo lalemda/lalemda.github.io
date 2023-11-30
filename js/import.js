@@ -96,6 +96,7 @@
 
                         'lalemda.html', 'gallery.html', 'about-us.html', 'contact-us.html', 'news-and-event.html',
                         'news1.html', 'news2.html', 'news3.html', 'lalemda-association.html', 'family-name.html',
+                        'news4.html',
                     ]   
     ;
     
@@ -402,7 +403,7 @@
             if(pathnameTruth.indexOf('true') === v) { className.foziya = 'active'; }
         });
 
-        [236,237,238,239,240,241,242,243,244,245].forEach( v => {                  /** All Home - Lalemda, Gallery,  */
+        [236,237,238,239,240,241,242,243,244,245,246].forEach( v => {                  /** All Home - Lalemda, Gallery,  */
             if(pathnameTruth.indexOf('true') === v) { 
                 className.ho = 'active';
                 setUrl.baseHome = '../../';
