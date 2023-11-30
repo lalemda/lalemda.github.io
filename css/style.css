@@ -2624,7 +2624,7 @@ aside.spotlight a.link:hover {
 .each-home-cont-one.section-one-path :where(section.news, section.event) figure img:hover {
     transform: scale(1.1);
 }
-.each-home-cont-one .section-one-path a {
+.each-home-cont-one .section-one-path a.link2 {
     color: var(--link-color-2);
 }
 
