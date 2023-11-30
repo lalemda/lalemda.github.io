@@ -2674,7 +2674,6 @@ aside.spotlight a.link:hover {
     border: var(--border-1);
     border-radius: var(--border-radius-3);
     padding: var(--padding-3);
-    margin-top: calc(var(--margin-3)*2);
     row-gap: calc(var(--gap-1) * 2);
 }
 .each-home-cont-one .section-one-path a.link {
