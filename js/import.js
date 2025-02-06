@@ -97,10 +97,12 @@
                         'lalemda.html', 'gallery.html', 'about-us.html', 'contact-us.html', 'news-and-event.html',
                         'news1.html', 'news2.html', 'news3.html', 'lalemda-association.html', 'family-name.html',
                         'news4.html',
+
+                        'remiz-hussen.html',
                     ]   
     ;
     
-    
+    // NOTE: Last array value: 247
     // SECTION: ==================== Header =======================
     _header.insertAdjacentHTML("afterbegin", mainHeaderFn());
 
@@ -280,7 +282,7 @@
             45,46,47,48,49,50,51,52,
             53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,
             73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,
-            88,89,90,91,92,
+            88,89,90,91,92,247,
             93,
             94,95,96,97
         ].forEach( v => {
@@ -303,7 +305,7 @@
         [73,74,75,76,77,78,79,80,81,82,83,84,85,86,87].forEach( v => {      // Saliyat - Mekiya
             if(pathnameTruth.indexOf('true') === v) { className.mekiya = 'active'; }
         });
-        [88,89,90,91,92].forEach( v => {        // Saliyat - Juhar
+        [88,89,90,91,92,247].forEach( v => {        // Saliyat - Juhar
             if(pathnameTruth.indexOf('true') === v) { className.juhar = 'active'; }
         });
         [93].forEach( v => {        // Saliyat - Muntaha
