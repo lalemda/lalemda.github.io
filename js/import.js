@@ -65,7 +65,7 @@
 
                         'redi-s-aysha.html',
 
-                        'suleyman-s-sefiya.html','muhammad-suleyman.html','xxx-s-muhammad.html','fetiya-suleyman.html',
+                        'suleyman-s-sefiya.html','muhammad-suleyman.html','rewda-s-muhammad.html','fetiya-suleyman.html',
                         'shemse-s-fetiya.html','kalid-shemse.html','rem-shemse.html','abubakar-shemse.html',
                         'muhammad-shemse.html',
 
